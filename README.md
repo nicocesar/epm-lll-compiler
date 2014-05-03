@@ -16,7 +16,7 @@ make
 
 ## Usage
 
-ethcomp -asm FILE  -- to compile to assembly
+ethcomp --asm FILE  -- to compile to assembly
 ethcomp FILE       -- to compile to bytecode
 
 ## License
