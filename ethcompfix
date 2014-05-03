@@ -1,0 +1,6 @@
+#!/usr/bin/env ruby
+
+file = ARGV[0]
+compOut = `ethcomp #{file}`
+out = compOut.gsub(",", '').gsub("[",'').gsub("]",'')
+print out + "\n"
