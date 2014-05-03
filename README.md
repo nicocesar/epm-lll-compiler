@@ -21,8 +21,8 @@ This will compile a `ethcomp` binary which you can place anywhere in your $PATH 
 
 ## Usage
 
-ethcomp --asm FILE  -- to compile to assembly
-ethcomp FILE       -- to compile to bytecode
+* `ethcomp --asm FILE`  -- to compile to assembly
+* `ethcomp FILE`        -- to compile to bytecode
 
 ## License
 
