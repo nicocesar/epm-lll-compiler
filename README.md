@@ -7,17 +7,22 @@ This is simply a wrapper around the LLL compiler for the [CPP-Ethereum](https://
 To Install this:
 
 ```bash
-cd <CPP_ETHEREUM_DIR>
-git clone git@github.com:ethereum-package-manager/lll-compiler.git compiler
-cd compiler
-cmake .
-make
+git clone git@github.com:ethereum-package-manager/epm-lll-compiler.git ethcomp
+cd ethcomp
 ```
+
+Then, update the CMAKE file line which says: `include_directories(/opt/cpp-ethereum)` to whereever your cpp-ethereum folder is located. Then.
+
+```bash
+cmake . && make
+```
+
+This will compile a `ethcomp` binary which you can place anywhere in your $PATH for easy compilation from scripts or otherwise. An example ruby script which uses the compiler is included as ethcompfix.
 
 ## Usage
 
-ethcomp --asm FILE  -- to compile to assembly
-ethcomp FILE       -- to compile to bytecode
+* `ethcomp --asm FILE`  -- to compile to assembly
+* `ethcomp FILE`        -- to compile to bytecode
 
 ## License
 
