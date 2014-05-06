@@ -43,6 +43,8 @@ enum class Instruction: uint8_t
 	NEG,
 	LT,
 	GT,
+	SLT,
+	SGT,
 	EQ,
 	NOT,
 
@@ -133,9 +135,6 @@ struct InstructionInfo
 	int args;			///< Number of items required on the stack for this instruction (and, for the purposes of ret, the number taken from the stack).
 	int ret;			///< Number of items placed (back) on the stack by this instruction, assuming args items were removed.
 };
-
-/// Get information concerning the currency denominations.
-std::vector<std::pair<u256, std::string>> const& units();
 
 /// Information on all the instructions.
 extern const std::map<Instruction, InstructionInfo> c_instructionInfo;
