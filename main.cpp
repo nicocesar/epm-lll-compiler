@@ -1,7 +1,7 @@
 #include <iostream>
 #include <fstream>
 #include <string>
-#include <libethcore/CommonIO.h>
+#include <libethsupport/CommonIO.h>
 #include "Instruction.h"
 
 using namespace std;

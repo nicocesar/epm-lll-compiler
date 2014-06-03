@@ -21,7 +21,7 @@
 
 #include "Instruction.h"
 #include <boost/algorithm/string.hpp>
-#include <libethereum/CommonEth.h>
+#include <libethcore/CommonEth.h>
 
 using namespace std;
 using namespace eth;
